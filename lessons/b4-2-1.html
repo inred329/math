@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>B4 2-1 樣本空間與事件｜紅的數學複習室</title>
+    <link rel="stylesheet" href="../assets/css/site.css" />
+  </head>
+  <body class="lesson-page" data-lesson-id="b4-2-1">
+    <header class="lesson-header">
+      <nav class="nav" aria-label="課程導覽">
+        <a class="brand" href="../index.html">紅的數學複習室</a>
+        <div class="nav-links">
+          <a href="b4-1-5.html">上一節</a>
+          <a href="../index.html#chapters">章節目錄</a>
+          <a href="b4-2-2.html">下一節</a>
+        </div>
+      </nav>
+      <div class="lesson-hero">
+        <p class="kicker">B4 第二章 機率</p>
+        <h1>2-1 樣本空間與事件</h1>
+        <p>
+          紅把硬幣、骰子和幾張編號卡片排在桌面上。紅沒有先問答案，只問：妳真的看見所有可能了嗎？
+        </p>
+      </div>
+    </header>
+
+    <main class="lesson-layout">
+      <article class="lesson-main">
+        <section class="lesson-card narrative-card">
+          <p class="kicker">故事課</p>
+          <h2>把所有可能先擺出來</h2>
+          <p>窗外的雨很細，打在玻璃上像一排排小括號。紅把一枚硬幣放在左邊，一顆骰子放在右邊，又把一條柔軟的桌邊固定帶扣在桌沿。紅沒有立刻使用，只是讓它安靜地待在那裡，像一道提醒：今天要學的不是運氣，而是範圍。</p>
+          <p>「擲一枚硬幣，再擲一顆骰子。」紅把題目寫下來，「事件 A 是硬幣正面，而且骰子是偶數。A 裡有幾個結果？」</p>
+          <p><span data-user-name>妳</span>看著骰子，幾乎立刻回答：「三個。二、四、六。」</p>
+          <p>紅的筆尖停住。紅抬眼看妳，聲音很平：「妳說的是骰子的結果，不是整個實驗的結果。正面在哪裡？」</p>
+          <p>那一瞬間，妳的心微微往下沉。明明只是漏掉兩個字，卻像把自己也漏在答案外面。妳想補一句「我知道」，但紅只是把紙往妳面前移近，讓妳把完整的結果寫出來。</p>
+          <ul class="discipline-list">
+            <li><strong>處罰：</strong>紅替妳扣上短暫的手腕固定帶，只限制妳把紙推開或逃避題目的動作。妳仍能書寫，也能隨時說停。紅要妳在安靜裡把樣本空間列完整。</li>
+          </ul>
+          <p>紅確認妳同意繼續後，在紙上寫：樣本空間 S，就是一次實驗中所有可能結果的集合。這題不是只看骰子，也不是只看硬幣，而是要把兩件事合在一起記錄。硬幣有正、反兩種；骰子有 1 到 6 六種，所以完整結果共有 2 x 6 = 12 個。</p>
+          <p>紅把前幾項慢慢列出來：S = {(正,1),(正,2),(正,3),(正,4),(正,5),(正,6),(反,1),...,(反,6)}。「每一個括號都是一次完整的可能。妳剛剛只寫二、四、六，就像只看見後半句。」</p>
+          <p>妳重新低頭，這次寫下 A = {(正,2),(正,4),(正,6)}。紅點了點紙面：「這才是事件。事件不是另一個世界，它只是樣本空間中的一部分。」</p>
+          <p>紅又抽出 1 到 10 的卡片。「第二個例子。從 1 到 10 抽一張，樣本空間是什麼？」</p>
+          <p>妳慢了一點才答：「{1,2,3,4,5,6,7,8,9,10}。」</p>
+          <p>「事件 B：抽到 3 的倍數。」</p>
+          <p>「{3,6,9}。」這次妳的聲音穩了些。紅沒有誇張地稱讚，只把固定帶鬆開，像把一段過度用力的呼吸還給妳。</p>
+          <p>第三個例子，紅把四張顏色卡和兩枚貼紙放在一起。「選一張顏色卡，再選一枚貼紙，樣本空間有幾個結果？」妳看著桌面，先寫 4 x 2 = 8，再補上一句：「如果事件是選到紅色卡，那要看紅色卡能搭配幾枚貼紙。」紅輕輕嗯了一聲。</p>
+          <p>妳終於明白，機率題不是先問自己想要哪個結果，而是先問：全部可能在哪裡？只有把整張桌面看清楚，事件才不會被妳寫得太小，或被妳誤以為是全部。</p>
+          <p>紅把硬幣和骰子放到妳面前：「下一題，先列樣本空間，再圈事件。妳可以期待某個結果，但不能只看妳期待的那一個。」計時器重新啟動，雨聲在窗外變得更細。</p>
+          <div class="rule-box">
+            <strong>今日規則</strong>
+            <span>樣本空間是所有可能結果；事件是樣本空間中符合條件的一部分。</span>
+          </div>
+          <h2>情境例題</h2>
+          <p>擲一枚硬幣和一顆骰子，樣本空間共有 2 x 6 = 12 個結果。若事件 A 是「正面且偶數」，則 A = {(正,2),(正,4),(正,6)}，共有 3 個結果。</p>
+        </section>
+
+        <section class="lesson-card practice-card">
+          <p class="kicker">Practice</p>
+          <h2>動態練習</h2>
+          <p data-question-text>題目載入中...</p>
+          <form class="answer-form" data-answer-form>
+            <label for="answer">妳的答案</label>
+            <div class="answer-row">
+              <input id="answer" data-answer-input inputmode="numeric" autocomplete="off" placeholder="輸入數字" />
+              <button class="button primary" type="submit">提交</button>
+            </div>
+          </form>
+          <p class="feedback" data-feedback></p>
+          <div class="practice-actions">
+            <button class="button secondary" type="button" data-new-question>換一題</button>
+            <button class="button secondary" type="button" data-show-solution>看提示</button>
+          </div>
+          <p class="solution" data-solution hidden></p>
+        </section>
+      </article>
+
+      <aside class="lesson-side">
+        <h2>紅的提醒</h2>
+        <p>先列樣本空間，再圈事件。不要只寫妳想看的那一部分。</p>
+        <div class="progress-note">
+          <span>練習方向</span>
+          <strong>遇到「幾個結果」時，先問每個結果是否完整描述了一次實驗。</strong>
+        </div>
+      </aside>
+    </main>
+
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/lesson.js"></script>
+  </body>
+</html>

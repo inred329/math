@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>B2 3-3 向量的內積｜紅的數學複習室</title>
+    <link rel="stylesheet" href="../assets/css/site.css" />
+  </head>
+  <body class="lesson-page" data-lesson-id="b2-3-3">
+    <header class="lesson-header">
+      <nav class="nav" aria-label="課程導覽">
+        <a class="brand" href="../index.html">紅的數學複習室</a>
+        <div class="nav-links">
+          <a href="b2-3-2.html">上一節</a>
+          <a href="../index.html#chapters">章節目錄</a>
+          <a href="b2-4-1.html">下一節</a>
+        </div>
+      </nav>
+      <div class="lesson-hero">
+        <p class="kicker">B2 第三章 向量</p>
+        <h1>3-3 向量的內積</h1>
+        <p>紅讓兩支箭頭交會。內積不只算數字，也判斷兩個方向彼此靠近或疏遠。</p>
+      </div>
+    </header>
+
+    <main class="lesson-layout">
+      <article class="lesson-main">
+        <section class="lesson-card narrative-card">
+          <p class="kicker">故事課</p>
+          <h2>兩個方向的關係</h2>
+          <p>紅在紙上寫 a = (3, 4)，b = (4, -3)。妳一看見兩個向量，先算長度都是 5，便說：「它們應該很像。」</p>
+          <p>紅把兩支箭頭畫出來，一支往右上，另一支往右下。它們交成直角。妳愣了一下，才知道長度相同不代表方向相同。</p>
+          <p>紅用布帶短暫固定妳的手腕，讓妳不能立刻把圖擦掉。「別逃回長度。」紅說，「用內積聽方向在說什麼。」</p>
+          <ul class="discipline-list">
+            <li><strong>處罰：</strong>短暫固定手腕，要求妳先算內積再下結論。固定可隨時停止，目的只是讓妳慢下來。</li>
+          </ul>
+          <p>妳計算 a · b = 3 x 4 + 4 x (-3) = 12 - 12 = 0。紅說，內積為 0 時，兩個非零向量垂直。這比妳用眼睛猜方向可靠得多。</p>
+          <p>第二個例子，a = (1, 2)，b = (3, 4)。內積是 1 x 3 + 2 x 4 = 11，正數代表夾角是銳角，兩個方向大致同向。紅把箭頭畫在同一側，妳看見數字和圖形對上了。</p>
+          <p>紅接著寫公式：a · b = |a||b|cos θ。若內積為正，cos θ 為正，夾角小於 90°；內積為負，夾角大於 90°；內積為 0，夾角等於 90°。</p>
+          <p>妳忽然明白，內積像一個很冷靜的判斷：它不問妳覺得兩支箭頭像不像，只問它們到底朝哪裡用力。這讓妳有點不安，因為妳最近也常在猜紅的方向。紅嚴格時，妳有時覺得紅在推妳往前，有時又覺得紅把妳壓回原地。妳分不清那是銳角、直角，還是某個讓人想退開的鈍角。</p>
+          <p>紅沒有追問妳在想什麼，只先確認固定可以解除。妳點頭後，紅把布帶鬆開，讓妳自己拿筆。「再一題。」紅寫 a = (2, -1)，b = (-3, 4)。妳算內積 = -6 - 4 = -10，是負數，所以夾角大於 90°。紅問：「圖上會像什麼？」妳畫出一支往右下、一支往左上，兩者確實有反向的成分。</p>
+          <p>第三個例子，a = (5, 0)，b = (0, -2)。內積是 0，所以垂直。紅說：「垂直不是沒有關係，而是方向完全獨立。」妳把這句話寫下來，覺得它比公式更難忘。</p>
+          <p>紅又用長度公式帶回夾角：若 |a| = 3，|b| = 4，夾角 60°，內積 = 3 x 4 x cos 60° = 6。妳終於看見坐標算法和角度公式是同一件事的兩種說法。紅把下一題放到妳面前：「先算內積，再判斷角度。不要只靠感覺猜兩個方向的關係。」</p>
+          <div class="rule-box">
+            <strong>今日規則</strong>
+            <span>a · b = x1x2 + y1y2 = |a||b|cos θ；內積為 0 代表非零向量互相垂直。</span>
+          </div>
+          <h2>情境例題</h2>
+          <p>(2, 5) · (4, -1) = 8 - 5 = 3，內積為正，夾角是銳角。</p>
+        </section>
+
+        <section class="lesson-card practice-card">
+          <p class="kicker">Practice</p>
+          <h2>動態練習</h2>
+          <p data-question-text>題目載入中...</p>
+          <form class="answer-form" data-answer-form>
+            <label for="answer">妳的答案</label>
+            <div class="answer-row">
+              <input id="answer" data-answer-input inputmode="numeric" autocomplete="off" placeholder="輸入內積" />
+              <button class="button primary" type="submit">提交</button>
+            </div>
+          </form>
+          <p class="feedback" data-feedback></p>
+          <div class="practice-actions">
+            <button class="button secondary" type="button" data-new-question>換一題</button>
+            <button class="button secondary" type="button" data-show-solution>看提示</button>
+          </div>
+          <p class="solution" data-solution hidden></p>
+        </section>
+      </article>
+
+      <aside class="lesson-side">
+        <h2>紅的提醒</h2>
+        <p>內積不只是一個數字。它能判斷銳角、鈍角與垂直。</p>
+        <div class="progress-note"><span>練習方向</span><strong>坐標內積、垂直判斷、夾角意義。</strong></div>
+      </aside>
+    </main>
+
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/lesson.js"></script>
+  </body>
+</html>

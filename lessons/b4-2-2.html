@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>B4 2-2 機率的運算｜紅的數學複習室</title>
+    <link rel="stylesheet" href="../assets/css/site.css" />
+  </head>
+  <body class="lesson-page" data-lesson-id="b4-2-2">
+    <header class="lesson-header">
+      <nav class="nav" aria-label="課程導覽">
+        <a class="brand" href="../index.html">紅的數學複習室</a>
+        <div class="nav-links">
+          <a href="b4-2-1.html">上一節</a>
+          <a href="../index.html#chapters">章節目錄</a>
+          <a href="b4-2-3.html">下一節</a>
+        </div>
+      </nav>
+      <div class="lesson-hero">
+        <p class="kicker">B4 第二章 機率</p>
+        <h1>2-2 機率的運算</h1>
+        <p>
+          有些選擇會重疊，有些結果要扣掉。紅要妳學會分清楚「或」「且」「不是」，也分清楚恐懼和事實。
+        </p>
+      </div>
+    </header>
+
+    <main class="lesson-layout">
+      <article class="lesson-main">
+        <section class="lesson-card narrative-card">
+          <p class="kicker">故事課</p>
+          <h2>重疊的地方不能算兩次</h2>
+          <p>桌面上排著 1 到 12 的卡片。紅把兩個透明圓圈片壓在卡片上，一個圈住偶數，一個圈住 3 的倍數。兩個圓圈重疊的地方剛好壓著 6 和 12。</p>
+          <p>「事件 A 是抽到偶數，事件 B 是抽到 3 的倍數。」紅問，「抽到偶數或 3 的倍數，共有幾個結果？」</p>
+          <p><span data-user-name>妳</span>很快地算：「偶數 6 個，3 的倍數 4 個，所以 10 個。」妳答錯得很自然，因為「或」看起來太像直接相加。</p>
+          <p>紅沒有立刻說錯，只是把 6 和 12 從重疊處拿起來，放到妳掌心。那兩張卡片有一點硬，壓得妳心裡也跟著清醒。「它們被妳算了兩次。」</p>
+          <p>妳低下頭。其實妳知道重疊，只是急著把答案交出去，好像快一點就能證明自己沒有落後。紅看出了這一點，語氣比剛才更安靜：「急不是錯，但急著交出沒有檢查的答案，就是妳要修的地方。」</p>
+          <ul class="discipline-list">
+            <li><strong>處罰：</strong>紅用戒尺輕打妳的手心作為提醒。每一次都只對應一個被重複計算的地方，之後紅立刻要妳回到圖上，把交集圈出來。</li>
+          </ul>
+          <p>紅在紙上寫下：A 或 B = A 的個數 + B 的個數 - A 且 B 的個數。「或」看起來像加法，但如果兩個事件有重疊，重疊部分會被加兩次，所以要扣一次。</p>
+          <p>紅指著卡片：「A = {2,4,6,8,10,12}，共有 6 個。B = {3,6,9,12}，共有 4 個。A 且 B = {6,12}，共有 2 個。所以 A 或 B 共有 6 + 4 - 2 = 8 個。」</p>
+          <p>妳把公式重寫一遍，突然發現它不像冰冷的規則，更像一種誠實：看見自己多算了哪裡，就把它扣回來。</p>
+          <p>紅又拿骰子。「第二個例子。擲一顆骰子，事件 C 是點數小於 5，事件 D 是偶數。C 或 D 有幾個結果？」</p>
+          <p>妳先列 C = {1,2,3,4}，D = {2,4,6}，交集是 {2,4}。然後寫：4 + 3 - 2 = 5。紅看著妳先列集合，再算答案，眼神終於柔了一點。</p>
+          <p>「第三個，補事件。」紅翻開另一頁，「從 1 到 12 抽一張，不是偶數有幾個？」</p>
+          <p>「全部 12 個，偶數 6 個，所以不是偶數有 12 - 6 = 6 個。」妳這次說得比較慢，也比較確定。</p>
+          <p>紅把兩個透明圓圈收回盒子裡。「機率的運算不是把詞翻成公式就好。『或』要檢查重疊，『且』要看交集，『不是』要從全部扣掉。只要妳願意慢下來，答案會比妳的焦慮清楚。」</p>
+          <p>紅看了妳的手心一眼，補上一句：「剛才的提醒以妳同意為前提。下一次如果妳只需要口頭提醒，就說。」妳點頭，把這句話寫在題目旁。然後紅把新集合放到妳面前：「這次妳自己畫兩個圈。先找全部，再找重疊，最後才算。」計時器重新啟動，透明圓圈的交會處等妳自己圈出來。</p>
+          <div class="rule-box">
+            <strong>今日規則</strong>
+            <span>「或」要扣重疊；「且」看交集；「不是」用全部減掉原事件。</span>
+          </div>
+          <h2>情境例題</h2>
+          <p>從 1 到 12 中抽一張，偶數有 6 個，3 的倍數有 4 個，同時是偶數且是 3 的倍數有 2 個，所以偶數或 3 的倍數共有 6 + 4 - 2 = 8 個。</p>
+        </section>
+
+        <section class="lesson-card practice-card">
+          <p class="kicker">Practice</p>
+          <h2>動態練習</h2>
+          <p data-question-text>題目載入中...</p>
+          <form class="answer-form" data-answer-form>
+            <label for="answer">妳的答案</label>
+            <div class="answer-row">
+              <input id="answer" data-answer-input inputmode="numeric" autocomplete="off" placeholder="輸入數字" />
+              <button class="button primary" type="submit">提交</button>
+            </div>
+          </form>
+          <p class="feedback" data-feedback></p>
+          <div class="practice-actions">
+            <button class="button secondary" type="button" data-new-question>換一題</button>
+            <button class="button secondary" type="button" data-show-solution>看提示</button>
+          </div>
+          <p class="solution" data-solution hidden></p>
+        </section>
+      </article>
+
+      <aside class="lesson-side">
+        <h2>紅的提醒</h2>
+        <p>看到「或」不要急著相加，先找兩個事件有沒有重疊。</p>
+        <div class="progress-note">
+          <span>練習方向</span>
+          <strong>先列 A、B、A 且 B，再決定要加、扣，或從全部減掉。</strong>
+        </div>
+      </aside>
+    </main>
+
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/lesson.js"></script>
+  </body>
+</html>

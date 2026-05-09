@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>B4 1-5 二項式定理｜紅的數學複習室</title>
+    <link rel="stylesheet" href="../assets/css/site.css" />
+  </head>
+  <body class="lesson-page" data-lesson-id="b4-1-5">
+    <header class="lesson-header">
+      <nav class="nav" aria-label="課程導覽">
+        <a class="brand" href="../index.html">紅的數學複習室</a>
+        <div class="nav-links">
+          <a href="b4-1-4.html">上一節</a>
+          <a href="../index.html#chapters">章節目錄</a>
+          <a href="b4-2-1.html">下一章</a>
+        </div>
+      </nav>
+      <div class="lesson-hero">
+        <p class="kicker">B4 第一章 排列組合</p>
+        <h1>1-5 二項式定理</h1>
+        <p>紅在紙上寫下 (x + 2)^5。看似一行代數式，裡面藏著五次選擇，也藏著妳最容易漏掉的那一步。</p>
+      </div>
+    </header>
+
+    <main class="lesson-layout">
+      <article class="lesson-main">
+        <section class="lesson-card narrative-card">
+          <p class="kicker">故事課</p>
+          <h2>係數不是背出來的，是選出來的</h2>
+          <p>第一章最後一節，紅把桌面清得很空。沒有任務卡，沒有名單，只有一張格線紙和紅寫在中央的式子：(x + 2)^5。</p>
+          <p>「求 x^3 的係數。」紅說。</p>
+          <p><span data-user-name>妳</span>很快回答：「10。」妳想到 C(5,3)，也知道要從五個括號裡選三個拿 x。可是紅的筆停在半空中，妳才知道自己又答錯在「只算選法」這一步。</p>
+          <p>「10 是選法，還不是係數。」紅說，「剩下兩個括號拿了什麼？」</p>
+          <p>妳的喉嚨微微收緊。又是那種只看見最熟悉一步，就急著宣布結束的習慣。紅把格線紙移近：「今天只提醒一次。妳一急著跳答案，就先停下來，再回頭看每個括號選了什麼。」</p>
+          <ul class="discipline-list">
+            <li><strong>處罰：</strong>輕打手心一次。紅先確認妳接受，才用這一下提醒妳先停住，不要急著報答案；接著要妳回頭檢查每個括號到底選了哪一項。</li>
+          </ul>
+          <p>紅把 (x + 2)^5 拆成五個 (x + 2) 相乘。「要得到 x^3，就是從五個括號裡選三個拿 x，剩下兩個拿 2。」</p>
+          <p>妳在紙上畫五個小括號，選出三個標上 x，剩下兩個標上 2。紅說：「選哪三個括號拿 x，有 C(5,3) 種；剩下兩個括號都拿 2，所以還要乘 2^2。」</p>
+          <p>妳重新寫：C(5,3) x 2^2 = 10 x 4 = 40。這一次答案不是從記憶裡跳出來，而是妳從五個括號一步一步算出來的。</p>
+          <p>紅又寫 (x + 1)^6，問 x^2 的係數。妳先選兩個括號拿 x：C(6,2)，剩下四個拿 1，所以係數是 C(6,2) x 1^4 = 15。常數是 1 時容易被忽略，但它仍然是選擇的一部分。</p>
+          <p>第三題是 (x + 3)^5 中 x^2 的係數。妳寫 C(5,2) x 3^3 = 10 x 27 = 270。紅點頭：「二項式定理不是要妳背一串係數，而是要妳看見每一項怎麼被選出來。」</p>
+          <p>妳把第一章的筆記合上。從加法、乘法，到排列、組合，再到二項式，每一題都在問妳怎麼數選擇。紅說：「下一章，妳會開始面對選了之後不一定能控制的結果。」</p>
+          <p>紅又補上一題：(2x + 3)^4 中 x^2 的係數。妳先想，要從四個括號中選兩個拿 2x，有 C(4,2) 種；這兩個括號各自帶出一個 2，所以有 2^2；剩下兩個拿 3，所以有 3^2。係數是 C(4,2) x 2^2 x 3^2 = 6 x 4 x 9 = 216。第三個例子，(x - 1)^5 中 x^4 的係數是 C(5,4)(-1)^1 = -5，連負號也不能漏。</p>
+          <p>這題讓妳徹底明白，二項式定理不是只背 C(n,k)。每個括號都在做選擇，選到的項和沒選到的項都要一起乘進去。紅把下一題放到妳面前：「先說幾個括號拿 x，再把剩下的常數補上。不要只寫組合數就停。」</p>
+          <div class="rule-box">
+            <strong>今日規則</strong>
+            <span>(x + a)^n 中 x^k 的係數，是 C(n,k) x a^(n-k)。</span>
+          </div>
+          <h2>情境例題</h2>
+          <p>(x + 2)^5 中 x^3 的係數為 C(5,3) x 2^2 = 10 x 4 = 40。</p>
+        </section>
+
+        <section class="lesson-card practice-card">
+          <p class="kicker">Practice</p>
+          <h2>動態練習</h2>
+          <p data-question-text>題目載入中...</p>
+          <form class="answer-form" data-answer-form>
+            <label for="answer">妳的答案</label>
+            <div class="answer-row">
+              <input id="answer" data-answer-input inputmode="numeric" autocomplete="off" placeholder="輸入數字" />
+              <button class="button primary" type="submit">提交</button>
+            </div>
+          </form>
+          <p class="feedback" data-feedback></p>
+          <div class="practice-actions">
+            <button class="button secondary" type="button" data-new-question>換一題</button>
+            <button class="button secondary" type="button" data-show-solution>看提示</button>
+          </div>
+          <p class="solution" data-solution hidden></p>
+        </section>
+      </article>
+
+      <aside class="lesson-side">
+        <h2>紅的提醒</h2>
+        <p>先問有幾個括號拿 x，再看剩下的括號拿常數多少。</p>
+        <div class="progress-note"><span>練習方向</span><strong>二項式係數、組合數、常數次方。</strong></div>
+      </aside>
+    </main>
+
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/lesson.js"></script>
+  </body>
+</html>

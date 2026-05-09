@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>B3 4-3 對數｜紅的數學複習室</title><link rel="stylesheet" href="../assets/css/site.css" /></head>
+  <body class="lesson-page" data-lesson-id="b3-4-3">
+    <header class="lesson-header"><nav class="nav" aria-label="課程導覽"><a class="brand" href="../index.html">紅的數學複習室</a><div class="nav-links"><a href="b3-4-2.html">上一節</a><a href="../index.html#chapters">章節目錄</a><a href="b3-4-4.html">下一節</a></div></nav><div class="lesson-hero"><p class="kicker">B3 第四章 指數與對數</p><h1>4-3 對數</h1><p>對數是在問：底數要乘幾次，才會到達眼前這個數？</p></div></header>
+    <main class="lesson-layout"><article class="lesson-main">
+      <section class="lesson-card narrative-card"><p class="kicker">故事課</p><h2>反過來問的指數</h2>
+        <p>紅寫下 2^3 = 8，又在旁邊寫 log_2 8。妳盯著那個 log，像看見一個陌生的門牌。</p>
+        <p>「log_2 8 是多少？」紅問。妳猜：「4？」紅搖頭：「不要猜。把它翻成指數句。」妳答錯得很小聲，因為那個 log 讓妳一瞬間忘了它其實是在問指數。</p>
+        <ul class="discipline-list"><li><strong>處罰：</strong>紅輕打手心一次，要求妳每看到對數都先翻譯成「底數的幾次方等於真數」。紅確認妳願意繼續後才執行，妳也可以說停。</li></ul>
+        <p>妳寫：log_2 8 = x，意思是 2^x = 8，所以 x = 3。紅說：「對數不是新的怪物，它是指數的反問。」</p>
+        <p>第二個例子：log_3 81 = x，就是 3^x = 81，所以 x = 4。第三個例子：log_10 1000 = 3，因為 10^3 = 1000。</p>
+        <p>紅補上條件：底數 a 要大於 0 且不等於 1，真數要大於 0。妳問為什麼真數不能是負數。紅把指數圖形指給妳看：「a^x 的值永遠大於 0，所以反過來問時，真數也必須大於 0。」</p>
+        <p>妳把定義寫下：若 a^x = N，則 log_a N = x。忽然發現對數不是要把妳推進更深的迷霧，而是讓妳能反向追問：這個結果，是幾次乘法走到的？</p>
+        <p>紅確認剛才那一下只是提醒後，讓妳自己翻譯第四題：log_4 1 = x。妳一開始想跳過，因為真數 1 看起來太小，不像答案。紅只指著定義。妳寫 4^x = 1，所以 x = 0。紅說：「任何合格底數的 0 次方都是 1。」</p>
+        <p>第五題是 log_5 (1/25)。妳先翻成 5^x = 1/25，知道 1/25 = 5^-2，所以 x = -2。原來對數可以是負的，只要真數仍然大於 0。妳在旁邊寫下：真數不能負，但對數值可以負。這句話把妳剛才的混亂切開了。</p>
+        <p>紅又問：「log_1 8 可以嗎？」妳想起底數不能等於 1，搖頭。紅說，因為 1 的任何次方都是 1，無法反問出唯一的指數。妳重新整理條件：底數大於 0、不等於 1；真數大於 0。紅再補 log_2 16 和 log_4 16 的比較，前者是 4，後者是 2，底數不同，問出的次方也不同。紅把下一題放到妳面前：「先翻譯，再回答。對數只是反方向的指數。」</p>
+        <div class="rule-box"><strong>今日規則</strong><span>log_a N = x 等價於 a^x = N；a &gt; 0、a ≠ 1、N &gt; 0。</span></div>
+        <h2>情境例題</h2><p>log_2 32 = 5，因為 2^5 = 32。</p>
+      </section>
+      <section class="lesson-card practice-card"><p class="kicker">Practice</p><h2>動態練習</h2><p data-question-text>題目載入中...</p><form class="answer-form" data-answer-form><label for="answer">妳的答案</label><div class="answer-row"><input id="answer" data-answer-input inputmode="numeric" autocomplete="off" placeholder="輸入對數值" /><button class="button primary" type="submit">提交</button></div></form><p class="feedback" data-feedback></p><div class="practice-actions"><button class="button secondary" type="button" data-new-question>換一題</button><button class="button secondary" type="button" data-show-solution>看提示</button></div><p class="solution" data-solution hidden></p></section>
+    </article><aside class="lesson-side"><h2>紅的提醒</h2><p>每題先翻譯：log_a N = x，就是 a^x = N。</p><div class="progress-note"><span>練習方向</span><strong>對數定義、指數互換、真數條件。</strong></div></aside></main>
+    <script src="../assets/js/app.js"></script><script src="../assets/js/lesson.js"></script>
+  </body>
+</html>

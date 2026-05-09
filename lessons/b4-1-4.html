@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>B4 1-4 組合｜紅的數學複習室</title>
+    <link rel="stylesheet" href="../assets/css/site.css" />
+  </head>
+  <body class="lesson-page" data-lesson-id="b4-1-4">
+    <header class="lesson-header">
+      <nav class="nav" aria-label="課程導覽">
+        <a class="brand" href="../index.html">紅的數學複習室</a>
+        <div class="nav-links">
+          <a href="b4-1-3.html">上一節</a>
+          <a href="../index.html#chapters">章節目錄</a>
+          <a href="b4-1-5.html">下一節</a>
+        </div>
+      </nav>
+      <div class="lesson-hero">
+        <p class="kicker">B4 第一章 排列組合</p>
+        <h1>1-4 組合</h1>
+        <p>順序被拿掉後，很多看似不同的答案其實是同一組。紅要妳學會把重複算進去的部分除掉。</p>
+      </div>
+    </header>
+
+    <main class="lesson-layout">
+      <article class="lesson-main">
+        <section class="lesson-card narrative-card">
+          <p class="kicker">故事課</p>
+          <h2>同一組人，不要重複計算</h2>
+          <p>紅收起密碼鎖，只留下七張寫著名字的卡片。題目很短：從七人中選三人整理錯題。</p>
+          <p><span data-user-name>妳</span>照上一節的習慣寫下 7 x 6 x 5 = 210。數字很漂亮，也很快。妳甚至有一點放心，以為自己終於抓到排列組合的節奏。</p>
+          <p>紅抽出 A、B、C 三張卡，換了幾種順序排在桌上：「ABC、ACB、BAC。若只是選出三人，這些有不同嗎？」</p>
+          <p>妳的筆停住。「沒有。」</p>
+          <p>紅把妳的雙手輕輕固定在題紙兩側。「那妳剛才把同一組人算了幾次？」</p>
+          <ul class="discipline-list">
+            <li><strong>處罰：</strong>手部拘束。紅要求妳等聽到「下一步」再寫；妳可以說停，拘束只用來提醒妳別用速度掩蓋重複計算。</li>
+          </ul>
+          <p>紅在紙上列出 ABC 的六種排列。妳看見同一組三人被排成 3! 種順序。若題目只問「選出哪三人」，這 6 種其實都算同一種選法。</p>
+          <p>「所以組合可以想成：先照排列算，再除掉每組內部的重複順序。」紅寫下 C(n,r) = P(n,r) / r!。</p>
+          <p>原題先算 7 x 6 x 5 = 210，再除以 3! = 6，得到 35。妳把 210 改成 35，心裡那種「太快了所以應該對」的安心也跟著鬆開。</p>
+          <p>紅又給妳兩個例子。第一個例子，10 人中選 3 人參加會議，不分職位，是 C(10,3) = 120。第二個例子，8 題中選 2 題練習，不管先做哪題，是 C(8,2) = 28。紅特別讓妳把「不分職位」和「不管先後」圈起來，因為那才是判斷組合題的重點。</p>
+          <p>紅接著反問：「如果 10 人中選一個組長、一個紀錄呢？」妳答：「職位不同，A 當組長和 A 當紀錄不是同一件事，所以是排列，10 x 9 = 90。」</p>
+          <p>紅確認手部拘束沒有讓妳不適，才讓妳繼續。妳看著那些名字卡，忽然明白自己為什麼老是把組合算成排列。妳太習慣比較先後，好像誰先被選、誰後被選，就代表誰比較重要。可是組合不在乎先後，它只問最後是哪一組。</p>
+          <p>紅又給一題：「八題中選三題做複習，不管順序，有幾種？」妳寫 C(8,3)=56。紅再問：「如果選三題後還要排成第一題、第二題、第三題呢？」妳答 P(8,3)=8 x 7 x 6=336。紅說：「同樣是三題，任務不同，算法不同。」</p>
+          <p>妳把「有職位、有順序」寫到排列欄，「只選集合」寫到組合欄。紅把下一題放到妳面前：「先問順序有沒有意義。這是寫答案前要先確認的事。」</p>
+          <p>紅這才讓妳放鬆手。「很好。組合不是比排列簡單，而是更要求妳問清楚：順序到底有沒有意義。」</p>
+          <div class="rule-box">
+            <strong>今日規則</strong>
+            <span>只在意選了哪些、不在意順序時，用組合；C(n,r) = P(n,r) / r!。</span>
+          </div>
+          <h2>情境例題</h2>
+          <p>7 人中選 3 人，不分順序，共 C(7,3) = 35 種。</p>
+        </section>
+
+        <section class="lesson-card practice-card">
+          <p class="kicker">Practice</p>
+          <h2>動態練習</h2>
+          <p data-question-text>題目載入中...</p>
+          <form class="answer-form" data-answer-form>
+            <label for="answer">妳的答案</label>
+            <div class="answer-row">
+              <input id="answer" data-answer-input inputmode="numeric" autocomplete="off" placeholder="輸入數字" />
+              <button class="button primary" type="submit">提交</button>
+            </div>
+          </form>
+          <p class="feedback" data-feedback></p>
+          <div class="practice-actions">
+            <button class="button secondary" type="button" data-new-question>換一題</button>
+            <button class="button secondary" type="button" data-show-solution>看提示</button>
+          </div>
+          <p class="solution" data-solution hidden></p>
+        </section>
+      </article>
+
+      <aside class="lesson-side">
+        <h2>紅的提醒</h2>
+        <p>先問順序有沒有意義。沒有順序，就把內部排列的重複除掉。</p>
+        <div class="progress-note"><span>練習方向</span><strong>C(n,r)、排列與組合判斷。</strong></div>
+      </aside>
+    </main>
+
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/lesson.js"></script>
+  </body>
+</html>

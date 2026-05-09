@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>B4 1-3 重複排列｜紅的數學複習室</title>
+    <link rel="stylesheet" href="../assets/css/site.css" />
+  </head>
+  <body class="lesson-page" data-lesson-id="b4-1-3">
+    <header class="lesson-header">
+      <nav class="nav" aria-label="課程導覽">
+        <a class="brand" href="../index.html">紅的數學複習室</a>
+        <div class="nav-links">
+          <a href="b4-1-2.html">上一節</a>
+          <a href="../index.html#chapters">章節目錄</a>
+          <a href="b4-1-4.html">下一節</a>
+        </div>
+      </nav>
+      <div class="lesson-hero">
+        <p class="kicker">B4 第一章 排列組合</p>
+        <h1>1-3 重複排列</h1>
+        <p>有些選擇用過以後不會消失。紅要妳學會辨認：可以重複時，不要把可能性扣掉。</p>
+      </div>
+    </header>
+
+    <main class="lesson-layout">
+      <article class="lesson-main">
+        <section class="lesson-card narrative-card">
+          <p class="kicker">故事課</p>
+          <h2>可以重複，就不要扣掉可能性</h2>
+          <p>紅把一把四位數任務鎖放在桌上。每一格都可以轉到 0 到 9。妳看著鎖，想起上一節的位置與順序，立刻寫下 10 x 9 x 8 x 7。</p>
+          <p>紅沒有讓妳繼續。「第一格用過 7，第二格就不能再用 7 嗎？」</p>
+          <p><span data-user-name>妳</span>停住。題目沒有說不能重複，可妳下意識把可能性扣掉了。那不只是數學錯誤，也像妳面對自己時常做的事：答錯一次，就覺得下一次也少了一點資格。</p>
+          <p>紅把紅色書籤壓在錯題本上，像一道小小的封條。「這一題沒有完成前，不翻頁。」</p>
+          <ul class="discipline-list">
+            <li><strong>處罰：</strong>道具拘束。紅用紅色書籤固定錯題本，象徵妳不能跳走；妳若不舒服，可以說停。</li>
+          </ul>
+          <p>紅說：「每一格都有 10 種選擇，而且用過的數字仍然可以再用。所以四位密碼共有 10 x 10 x 10 x 10 = 10^4 種。」</p>
+          <p>妳把原本的 10 x 9 x 8 x 7 劃掉，改寫成 10^4。那一排重複的 10 看起來很固執，也很公平：每一格都重新給妳完整的可能。</p>
+          <p>第二個例子，紅問：「五種符號填三格，每格都可重複，有幾種？」妳答 5^3。第三個例子，六種顏色可以重複塗四個位置，答案是 6^4。紅補充：「若不能重複，才會變成 6 x 5 x 4 x 3。」</p>
+          <p>妳看著任務鎖，終於把規則說清楚：「重複排列，是每一格都有相同選擇數。若有 n 種選擇、填 r 格，就是 n^r。」</p>
+          <p>紅沒有立刻鬆開書籤，而是問：「如果題目說四位數字密碼，第一位不能是 0，其他位可以重複呢？」妳先停住，這次沒有把所有格都寫成 10。第一格只有 9 種，後三格各 10 種，所以是 9 x 10 x 10 x 10。紅點頭：「可重複不代表每一格條件都一樣，先看每一格。」</p>
+          <p>第三個例子，紅說三個字母組成代碼，字母 A、B、C、D 可重複使用。妳寫 4^3 = 64。若改成不可重複，就是 4 x 3 x 2 = 24。兩個答案並排時，妳終於看見「可不可以重複」不是小字，而是整題的界線。</p>
+          <p>紅又補一個容易混淆的例子：從 1、2、3、4、5 中取三個數字組成三位數，若可以重複，是 5^3；若不可重複，是 5 x 4 x 3。妳把兩個答案放在一起，才真正看見條件改一個字，整個可能性就改變。紅鬆開紅色書籤，把下一題放在鎖旁：「先讀有沒有重複，再看每格條件。不要替題目扣掉它沒有扣掉的可能。」</p>
+          <p>紅收起書籤。「不要在題目沒有要求時，替自己扣掉可能。數學如此，妳也是。」</p>
+          <div class="rule-box">
+            <strong>今日規則</strong>
+            <span>可重複使用時，每一格選擇數不變；n 種選擇填 r 格，共 n^r 種。</span>
+          </div>
+          <h2>情境例題</h2>
+          <p>6 種符號填 4 位密碼，符號可重複，共有 6^4 = 1296 種。</p>
+        </section>
+
+        <section class="lesson-card practice-card">
+          <p class="kicker">Practice</p>
+          <h2>動態練習</h2>
+          <p data-question-text>題目載入中...</p>
+          <form class="answer-form" data-answer-form>
+            <label for="answer">妳的答案</label>
+            <div class="answer-row">
+              <input id="answer" data-answer-input inputmode="numeric" autocomplete="off" placeholder="輸入數字" />
+              <button class="button primary" type="submit">提交</button>
+            </div>
+          </form>
+          <p class="feedback" data-feedback></p>
+          <div class="practice-actions">
+            <button class="button secondary" type="button" data-new-question>換一題</button>
+            <button class="button secondary" type="button" data-show-solution>看提示</button>
+          </div>
+          <p class="solution" data-solution hidden></p>
+        </section>
+      </article>
+
+      <aside class="lesson-side">
+        <h2>紅的提醒</h2>
+        <p>題目沒有說不能重複，就不要自動扣掉已用過的選擇。</p>
+        <div class="progress-note"><span>練習方向</span><strong>重複排列、密碼題、n^r。</strong></div>
+      </aside>
+    </main>
+
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/lesson.js"></script>
+  </body>
+</html>

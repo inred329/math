@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>B3 3-3 線性規劃｜紅的數學複習室</title><link rel="stylesheet" href="../assets/css/site.css" /></head>
+  <body class="lesson-page" data-lesson-id="b3-3-3">
+    <header class="lesson-header"><nav class="nav" aria-label="課程導覽"><a class="brand" href="../index.html">紅的數學複習室</a><div class="nav-links"><a href="b3-3-2.html">上一節</a><a href="../index.html#chapters">章節目錄</a><a href="b3-4-1.html">下一章</a></div></nav><div class="lesson-hero"><p class="kicker">B3 第三章 二元一次不等式及其應用</p><h1>3-3 線性規劃</h1><p>很多限制交在一起時，答案藏在可行區裡。紅要妳學會在限制內找最好的選擇。</p></div></header>
+    <main class="lesson-layout"><article class="lesson-main">
+      <section class="lesson-card narrative-card">
+        <p class="kicker">故事課</p><h2>限制交出的可行區</h2>
+        <p>紅把兩種複習任務寫在紙上：整理筆記 x 份，練習題 y 組。每份筆記要 1 小時，每組題要 2 小時，今晚最多 8 小時；而且至少要完成 1 份筆記和 1 組題。</p>
+        <p><span data-user-name>妳</span>立刻說：「那我全做題，效率最高。」紅指著「至少 1 份筆記」那行：「妳又把不喜歡的限制消掉了。」</p>
+        <ul class="discipline-list"><li><strong>處罰：</strong>紅短暫固定妳的手腕，要求妳先把所有限制列完，才能開始比較最大值或最小值。妳可以說停，固定只用來阻止妳跳步驟。</li></ul>
+        <p>限制是 x &ge; 1、y &ge; 1、x + 2y &le; 8。紅要妳畫出可行區。妳先畫三條邊界，再找交點：(1,1)、(6,1)、(1,3.5)。如果只考慮整數，可能點包含 (1,1)、(2,1)、(4,2) 等等。</p>
+        <p>紅寫目標函數：得分 P = 3x + 5y。紅說：「線性規劃通常是在可行區的頂點找最大或最小。」妳把頂點代入：P(1,1)=8，P(6,1)=23，P(1,3.5)=20.5。若不限整數，最大在 (6,1)。</p>
+        <p>第二個例子，若限制為 x + y &le; 10、x &ge; 0、y &ge; 0，目標 P = 2x + 4y，頂點是 (0,0)、(10,0)、(0,10)，最大值在 (0,10)，P = 40。</p>
+        <p>妳看著方格紙，忽然明白紅為什麼說限制不是敵人。沒有可行區，妳根本不知道哪些選擇能做；沒有目標函數，妳也不知道要怎麼比較。</p>
+        <p>紅鬆開固定帶。「成熟不是沒有規則，而是在規則裡仍然能選。」</p>
+        <p>妳看著可行區的頂點，突然明白第三部為什麼一路都在談限制。限制不是叫妳閉上眼睛接受，而是先把不能做的地方排除，留下可以真的選擇的區域。沒有 x ≥ 0、y ≥ 0，題目會失去現實；沒有 x + 2y ≤ 8，妳會以為什麼都能無限拿。</p>
+        <p>紅又給一個變形：限制 x + y ≤ 10、x ≤ 6、y ≤ 8、x ≥ 0、y ≥ 0，目標 P = 4x + 3y。妳先找頂點 (0,0)、(6,0)、(6,4)、(2,8)、(0,8)，再代入 P：0、24、36、32、24，所以最大值在 (6,4)，P = 36。紅問：「為什麼只看頂點？」妳答：「線性目標在多邊形可行區的最大或最小通常出現在頂點。」</p>
+        <p>第三個例子，若目標改成 P = x + 5y，妳重新代入同一組頂點，最大變成 (2,8)，P = 42。可行區沒變，目標改了，最佳解也改了。妳突然覺得這很像自己的複習：限制一樣，但目標不同時，選擇也會不同。</p>
+        <p>紅把下一張規劃題放到妳面前：「先列限制，後找可行區，最後比較目標。不要在還沒知道能不能做以前，就急著問哪個最好。」計時器重新啟動，妳先寫下所有限制，才讓筆尖碰到目標函數。</p>
+        <div class="rule-box"><strong>今日規則</strong><span>線性規劃先列限制、畫可行區，再把目標函數代入頂點比較最大或最小。</span></div>
+        <h2>情境例題</h2><p>限制 x + y &le; 6、x &ge; 0、y &ge; 0，目標 P = x + 2y，頂點 (0,0)、(6,0)、(0,6) 中最大值在 (0,6)，P = 12。</p>
+      </section>
+      <section class="lesson-card practice-card"><p class="kicker">Practice</p><h2>動態練習</h2><p data-question-text>題目載入中...</p><form class="answer-form" data-answer-form><label for="answer">妳的答案</label><div class="answer-row"><input id="answer" data-answer-input inputmode="numeric" autocomplete="off" placeholder="輸入最大值" /><button class="button primary" type="submit">提交</button></div></form><p class="feedback" data-feedback></p><div class="practice-actions"><button class="button secondary" type="button" data-new-question>換一題</button><button class="button secondary" type="button" data-show-solution>看提示</button></div><p class="solution" data-solution hidden></p></section>
+    </article><aside class="lesson-side"><h2>紅的提醒</h2><p>先列限制，再找可行區頂點。最大值通常在頂點發生。</p><div class="progress-note"><span>練習方向</span><strong>限制式、可行區、目標函數與頂點比較。</strong></div></aside></main>
+    <script src="../assets/js/app.js"></script><script src="../assets/js/lesson.js"></script>
+  </body>
+</html>

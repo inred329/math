@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>B3 1-2 等比數列與等比級數｜紅的數學複習室</title>
+    <link rel="stylesheet" href="../assets/css/site.css" />
+  </head>
+  <body class="lesson-page" data-lesson-id="b3-1-2">
+    <header class="lesson-header">
+      <nav class="nav" aria-label="課程導覽">
+        <a class="brand" href="../index.html">紅的數學複習室</a>
+        <div class="nav-links">
+          <a href="b3-1-1.html">上一節</a>
+          <a href="../index.html#chapters">章節目錄</a>
+          <a href="b3-2-1.html">下一章</a>
+        </div>
+      </nav>
+      <div class="lesson-hero">
+        <p class="kicker">B3 第一章 數列與級數</p>
+        <h1>1-2 等比數列與等比級數</h1>
+        <p>有些規律不是每次加一樣多，而是每次乘上一樣的倍數。紅要妳分清楚「差」和「比」。</p>
+      </div>
+    </header>
+
+    <main class="lesson-layout">
+      <article class="lesson-main">
+        <section class="lesson-card narrative-card">
+          <p class="kicker">故事課</p>
+          <h2>不是加多少，是乘幾倍</h2>
+          <p>紅今天把燈調暗一些，只留下桌上的計時器。紅寫下 3、6、12、24，問妳：「下一項？」</p>
+          <p>妳先看差：3、6、12。差越來越大，妳皺眉說：「好像不是等差，那下一項我猜 36？」</p>
+          <p>紅把桌邊固定帶扣上，讓妳不能用筆把錯誤答案劃掉逃開。「不確定時，不准用猜的補空白。」</p>
+          <ul class="discipline-list">
+            <li><strong>處罰：</strong>紅短暫固定妳的手腕，要求妳逐項比較相鄰兩項的比值。妳可以說停；確認規律後，紅才鬆開。</li>
+          </ul>
+          <p>妳照紅說的算：6 ÷ 3 = 2，12 ÷ 6 = 2，24 ÷ 12 = 2。紅說：「相鄰兩項的比固定，叫等比數列。固定的比，叫公比。」</p>
+          <p>紅寫下公式：a_n = a_1 r^(n - 1)。這題第一項 3，公比 2，所以第 5 項是 3 x 2^4 = 48。妳看著 48，覺得它不像猜來的答案，而像從前面四項自然長出來。</p>
+          <p>紅又寫 5、15、45、135。「第 6 項？」妳先算公比 3，再算 a_6 = 5 x 3^5 = 1215。數字長得很快，像一個小小的選擇一旦重複，就會變成很大的後果。</p>
+          <p>接著紅問前幾項和。紅寫：等比級數前 n 項和，若 r 不等於 1，S_n = a_1(r^n - 1)/(r - 1)。以 3、6、12、24、48 為例，前 5 項和是 3(2^5 - 1)/(2 - 1) = 93。</p>
+          <p>妳小聲說：「等差像固定步伐，等比像固定倍率。」紅點頭：「所以判斷時先問，差固定，還是比固定。」</p>
+          <p>第三個例子，紅給妳 2、6、18、54。妳算前 4 項和是 2(3^4 - 1)/(3 - 1) = 80。這次妳沒有急著猜，反而先把相鄰兩項的比都寫出來。紅看見了，也就鬆開固定帶。</p>
+          <p>妳活動了一下手腕，沒有立刻抱怨。等比數列讓妳有點害怕，因為它長得太快。一步錯誤如果被重複，後面會放大很多；可反過來，一個正確的小習慣如果被重複，也會長成妳原本不敢想的距離。紅像是知道妳在想什麼，只說：「倍率不會替妳選方向，它只會放大妳已經選的方向。」</p>
+          <p>紅又寫一題：第一項 4，公比 1/2，問第 5 項。妳算 a_5 = 4 x (1/2)^4 = 1/4。原來等比不一定越變越大，也可能越來越小。紅問：「公比小於 1 時，規律還在嗎？」妳答：「在，只是每次乘上同一個小於 1 的數。」</p>
+          <p>妳把等差和等比放在同一頁比較：等差看差，等比看比；等差像固定步距，等比像固定倍率。紅把下一題放在兩欄中間：「先判斷是哪一種規律，再算。不要讓數字變大就嚇到妳。」</p>
+          <p>限制有時不是一條線，而是一個倍率。妳若忽略它，後面的數字會失控；妳若看懂它，就能知道它會把妳帶到哪裡。</p>
+          <div class="rule-box">
+            <strong>今日規則</strong>
+            <span>等比數列相鄰兩項比固定；a_n = a_1 r^(n - 1)，S_n = a_1(r^n - 1)/(r - 1)。</span>
+          </div>
+          <h2>情境例題</h2>
+          <p>數列 4、12、36 的公比是 3，第 5 項為 4 x 3^4 = 324。</p>
+        </section>
+
+        <section class="lesson-card practice-card">
+          <p class="kicker">Practice</p>
+          <h2>動態練習</h2>
+          <p data-question-text>題目載入中...</p>
+          <form class="answer-form" data-answer-form>
+            <label for="answer">妳的答案</label>
+            <div class="answer-row">
+              <input id="answer" data-answer-input inputmode="numeric" autocomplete="off" placeholder="輸入數字" />
+              <button class="button primary" type="submit">提交</button>
+            </div>
+          </form>
+          <p class="feedback" data-feedback></p>
+          <div class="practice-actions">
+            <button class="button secondary" type="button" data-new-question>換一題</button>
+            <button class="button secondary" type="button" data-show-solution>看提示</button>
+          </div>
+          <p class="solution" data-solution hidden></p>
+        </section>
+      </article>
+
+      <aside class="lesson-side">
+        <h2>紅的提醒</h2>
+        <p>不要只看數字變大。先比較相鄰兩項的比值是否固定。</p>
+        <div class="progress-note"><span>練習方向</span><strong>第 n 項、前 n 項和、公比判斷。</strong></div>
+      </aside>
+    </main>
+
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/lesson.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>B4 1-2 直線排列｜紅的數學複習室</title>
+    <link rel="stylesheet" href="../assets/css/site.css" />
+  </head>
+  <body class="lesson-page" data-lesson-id="b4-1-2">
+    <header class="lesson-header">
+      <nav class="nav" aria-label="課程導覽">
+        <a class="brand" href="../index.html">紅的數學複習室</a>
+        <div class="nav-links">
+          <a href="b4-1-1.html">上一節</a>
+          <a href="../index.html#chapters">章節目錄</a>
+          <a href="b4-1-3.html">下一節</a>
+        </div>
+      </nav>
+      <div class="lesson-hero">
+        <p class="kicker">B4 第一章 排列組合</p>
+        <h1>1-2 直線排列</h1>
+        <p>順序一旦有意義，位置就不再只是空格。紅要妳一格一格數，不准用直覺跳過。</p>
+      </div>
+    </header>
+
+    <main class="lesson-layout">
+      <article class="lesson-main">
+        <section class="lesson-card narrative-card">
+          <p class="kicker">故事課</p>
+          <h2>先後不同，就不是同一件事</h2>
+          <p>紅把五張任務卡排在桌邊，每張都寫著不同內容：背公式、整理錯題、練計算、畫圖、訂正。紅在紙上畫出三個空格，要妳從五張裡挑三張排成今晚的順序。</p>
+          <p>「有幾種排法？」紅問。</p>
+          <p><span data-user-name>妳</span>想起上一節，脫口而出：「5 + 4 + 3？」</p>
+          <p>紅把第一格輕輕圈起來。「這不是選一類。第一格要放一張，第二格也要放一張，第三格也要放一張。每一步都要完成。」</p>
+          <p>妳的臉有些熱。紅沒有催，只把戒尺放在桌上。「今天的處罰很簡單。跳過步驟，就停下來。」</p>
+          <ul class="discipline-list">
+            <li><strong>處罰：</strong>輕打手心一次。紅先確認妳接受，才用這一下提醒妳先停住，不要急著報答案；接著要妳回頭看每一格還剩幾種選擇。</li>
+          </ul>
+          <p>紅指著第一格：「第一格有 5 種選擇。選走一張後，第二格剩 4 種。第三格剩 3 種。所以是 5 x 4 x 3 = 60。」</p>
+          <p>妳把三個格子重新寫上 5、4、3。這時才看見，排列不是把數字堆上去，而是每一個位置都在問：現在還剩幾種可能？</p>
+          <p>紅又問：「四本不同筆記排成一列呢？」</p>
+          <p>妳答：「4 x 3 x 2 x 1 = 24，也就是 4!。」</p>
+          <p>第三個例子，八張任務卡選三張排順序。妳寫 8 x 7 x 6 = 336。紅補充：「這可以寫成 P(8,3)。從 n 個不同物中取 r 個排成一列，就是 P(n,r)。」</p>
+          <p>紅再問：「如果五個人排隊，但 A 固定第一位？」妳停了一下，先把 A 放進第一格，剩下四人排後面，所以是 4! = 24。</p>
+          <p>紅收起卡片。「排列的重點不是大數字，而是位置。當位置有差，先後就有差。」妳點頭，這次沒有急著把答案交給紅。</p>
+          <p>妳忽然想到，第四部的「選擇」不只是有幾種，也包含先後。先道歉再解釋，和先解釋再道歉，聽起來就不是同一件事；先讀題再計算，和先抓數字就乘，也會得到不同結果。排列把這種差異變成可計算的規則。</p>
+          <p>紅確認剛才的打手心只是提醒後，又給一題：「六本不同的參考書排成一列，其中數學B必須排第一，有幾種？」妳先固定數學B，剩下五本排列，所以是 5! = 120。紅再問：「如果數學B和錯題本必須相鄰？」妳把兩本綁成一組，和另外四本共五個單位排列，內部還有 2 種順序，所以是 5! x 2 = 240。</p>
+          <p>紅把下一題放到妳面前：「只要位置不同會造成結果不同，就先想排列。把位置排清楚，再交答案。」</p>
+          <div class="rule-box">
+            <strong>今日規則</strong>
+            <span>順序不同算不同時，用排列；從 n 個取 r 個排列，為 P(n,r)。</span>
+          </div>
+          <h2>情境例題</h2>
+          <p>5 張不同卡片取 3 張排成一列，共有 5 x 4 x 3 = 60 種。</p>
+        </section>
+
+        <section class="lesson-card practice-card">
+          <p class="kicker">Practice</p>
+          <h2>動態練習</h2>
+          <p data-question-text>題目載入中...</p>
+          <form class="answer-form" data-answer-form>
+            <label for="answer">妳的答案</label>
+            <div class="answer-row">
+              <input id="answer" data-answer-input inputmode="numeric" autocomplete="off" placeholder="輸入數字" />
+              <button class="button primary" type="submit">提交</button>
+            </div>
+          </form>
+          <p class="feedback" data-feedback></p>
+          <div class="practice-actions">
+            <button class="button secondary" type="button" data-new-question>換一題</button>
+            <button class="button secondary" type="button" data-show-solution>看提示</button>
+          </div>
+          <p class="solution" data-solution hidden></p>
+        </section>
+      </article>
+
+      <aside class="lesson-side">
+        <h2>紅的提醒</h2>
+        <p>只要題目在意第幾位、先後、職位或順序，就先想到排列。</p>
+        <div class="progress-note"><span>練習方向</span><strong>直線排列、階乘、P(n,r)。</strong></div>
+      </aside>
+    </main>
+
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/lesson.js"></script>
+  </body>
+</html>

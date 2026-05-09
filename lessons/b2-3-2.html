@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>B2 3-2 向量的坐標表示法｜紅的數學複習室</title>
+    <link rel="stylesheet" href="../assets/css/site.css" />
+  </head>
+  <body class="lesson-page" data-lesson-id="b2-3-2">
+    <header class="lesson-header">
+      <nav class="nav" aria-label="課程導覽">
+        <a class="brand" href="../index.html">紅的數學複習室</a>
+        <div class="nav-links">
+          <a href="b2-3-1.html">上一節</a>
+          <a href="../index.html#chapters">章節目錄</a>
+          <a href="b2-3-3.html">下一節</a>
+        </div>
+      </nav>
+      <div class="lesson-hero">
+        <p class="kicker">B2 第三章 向量</p>
+        <h1>3-2 向量的坐標表示法</h1>
+        <p>紅把箭頭放進座標平面。向量不是終點的名字，而是從起點走到終點的差。</p>
+      </div>
+    </header>
+
+    <main class="lesson-layout">
+      <article class="lesson-main">
+        <section class="lesson-card narrative-card">
+          <p class="kicker">故事課</p>
+          <h2>終點減起點</h2>
+          <p>紅在方格紙上標出 A(1, 2) 和 B(5, 5)，要妳寫出向量 AB。妳盯著 B 點，直接寫下 (5, 5)。</p>
+          <p>紅的手指停在 A 點上。「妳把終點當答案，起點被妳丟掉了。」妳看著 A 到 B 的箭頭，忽然意識到向量問的是移動，不是目的地。</p>
+          <p>紅輕打妳手心一下，然後把筆放回妳指間。「每次寫坐標向量，都念一次：終點減起點。」</p>
+          <ul class="discipline-list">
+            <li><strong>處罰：</strong>紅輕打手心一次，要求妳把「B - A」寫在答案前面，避免只盯著終點。紅先確認妳願意繼續，妳也能要求只做口頭提醒。</li>
+          </ul>
+          <p>妳重新算：向量 AB = (5 - 1, 5 - 2) = (4, 3)。它表示從 A 出發，向右 4 格、向上 3 格。紅接著問長度，妳用畢氏定理算 |AB| = √(4² + 3²) = 5。</p>
+          <p>第二個例子，C(-2, 4)，D(3, 1)。妳這次先寫 D - C = (3 - (-2), 1 - 4) = (5, -3)。向右 5 格、向下 3 格，方向立刻清楚起來。</p>
+          <p>紅又寫向量 v = (2, -1)，問 3v 是什麼。妳把每個分量都乘 3，得到 (6, -3)。紅說：「倍數會改變長度，也可能改變方向。乘正數方向同向；乘負數方向相反。」</p>
+          <p>妳把箭頭畫出來，終於不再把坐標看成孤立的點。可是「終點不是全部」這句話留在妳心裡。妳一直很想快點抵達一個能證明自己的結果，像考過、答對、被紅點頭。可向量不只問終點，它問從哪裡開始、走了多少、方向如何。起點被忽略，整段位移就會錯。</p>
+          <p>紅確認剛才那一下處罰只是提醒，沒有讓妳想停下後，又寫 A(-3, 1)、B(2, -5)。妳先說終點減起點：AB = (2 - (-3), -5 - 1) = (5, -6)。紅問長度，妳算 √(25 + 36) = √61。這次不是漂亮整數，但妳知道它的意思：向右 5、向下 6 的那段移動。</p>
+          <p>第三個例子，紅給向量 u = (-2, 3)，問 -3u。妳把每個分量乘 -3，得到 (6, -9)。紅讓妳畫圖，原本向左上，乘負數後變成右下，而且長度放大三倍。妳說：「負號會反向，倍數會改變長度。」紅點頭，讓妳把這句話寫進筆記。</p>
+          <p>紅又問：「若 A 到 B 是 (4, 3)，B 到 C 是 (-1, 5)，那 A 到 C 呢？」妳把分量相加，得到 (3, 8)。向量像把幾段路接成一段更清楚的位移。妳忽然不那麼急著只看終點了。</p>
+          <p>紅把下一題放到妳面前：「先寫終點減起點，再談長度。不要把目的地當成整段路。」</p>
+          <div class="rule-box">
+            <strong>今日規則</strong>
+            <span>向量 AB = (x_B - x_A, y_B - y_A)；長度為 √(x² + y²)；倍數向量要每個分量一起乘。</span>
+          </div>
+          <h2>情境例題</h2>
+          <p>若 P(2, -1)、Q(8, 7)，則向量 PQ = (6, 8)，長度為 10。</p>
+        </section>
+
+        <section class="lesson-card practice-card">
+          <p class="kicker">Practice</p>
+          <h2>動態練習</h2>
+          <p data-question-text>題目載入中...</p>
+          <form class="answer-form" data-answer-form>
+            <label for="answer">妳的答案</label>
+            <div class="answer-row">
+              <input id="answer" data-answer-input inputmode="numeric" autocomplete="off" placeholder="輸入長度" />
+              <button class="button primary" type="submit">提交</button>
+            </div>
+          </form>
+          <p class="feedback" data-feedback></p>
+          <div class="practice-actions">
+            <button class="button secondary" type="button" data-new-question>換一題</button>
+            <button class="button secondary" type="button" data-show-solution>看提示</button>
+          </div>
+          <p class="solution" data-solution hidden></p>
+        </section>
+      </article>
+
+      <aside class="lesson-side">
+        <h2>紅的提醒</h2>
+        <p>看到 AB，就先寫 B - A。坐標向量描述的是位移，不是終點。</p>
+        <div class="progress-note"><span>練習方向</span><strong>分量、向量長度、倍數向量。</strong></div>
+      </aside>
+    </main>
+
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/lesson.js"></script>
+  </body>
+</html>

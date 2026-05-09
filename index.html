@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>契約複習室｜技職數學B</title>
+    <link rel="stylesheet" href="assets/css/site.css" />
+  </head>
+  <body>
+    <div class="name-gate" data-name-gate>
+      <form class="name-card" data-name-form>
+        <p class="kicker">Enter The Room</p>
+        <h2>進入契約複習室</h2>
+        <p>輸入你想在故事中使用的名字。資料只會以 JSON 形式保存在這台裝置的瀏覽器裡。</p>
+        <label for="user-name">你的名字</label>
+        <div class="name-row">
+          <input id="user-name" name="userName" type="text" maxlength="18" autocomplete="name" placeholder="例如：以寧" required />
+          <button class="button primary" type="submit">進入</button>
+        </div>
+        <p class="name-note">之後可以在首頁右上角重新設定。</p>
+      </form>
+    </div>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="主選單">
+        <a class="brand" href="index.html">契約複習室</a>
+        <div class="nav-links">
+          <button class="nav-button" type="button" data-reset-name>設定名字</button>
+          <a href="#characters">人物</a>
+          <a href="#world">背景</a>
+          <a href="#chapters">章節</a>
+        </div>
+      </nav>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="kicker">技術型高中數學B｜成人敘事複習企劃</p>
+          <h1 id="page-title">每一道題，都是一次重新掌握自己的機會。</h1>
+          <p>
+            <span data-user-name>沈以寧</span>不是學生，而是一位成年後重返考場的學習者。為了補回技職數學B，她走進一間只在夜裡開放的私人複習室，簽下一份清楚、平等、可停止的學習契約。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#chapters">查看章節</a>
+            <a class="button secondary" href="#contract">閱讀契約</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="故事視覺摘要">
+          <div class="desk-scene">
+            <span class="lamp"></span>
+            <span class="notebook"></span>
+            <span class="pencil"></span>
+            <span class="timer">45:00</span>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="characters" class="section">
+        <div class="section-heading">
+          <p class="kicker">Characters</p>
+          <h2>主要人物</h2>
+        </div>
+        <div class="character-grid">
+          <article class="character-card">
+            <p class="role">學習者</p>
+            <h3><span data-user-name>沈以寧</span></h3>
+            <p>
+              <span data-user-name>沈以寧</span>，十九歲，曾在國外生活多年。她回到台灣後決定重新準備技職數學B，表面冷靜，實際上對「從頭開始」這件事很不甘心。
+            </p>
+            <ul>
+              <li>擅長語言與整理資料</li>
+              <li>害怕公開答錯，卻不願承認</li>
+              <li>需要明確規則，也需要有人陪她撐過卡關</li>
+            </ul>
+          </article>
+          <article class="character-card">
+            <p class="role">私人導師</p>
+            <h3>紅</h3>
+            <p>
+              四十三歲，數學補習講師。語氣溫和，但規則執行得很嚴。他相信錯題不是失敗，而是下一次練習的開始。
+            </p>
+            <ul>
+              <li>每次訓練前確認界線與狀態</li>
+              <li>不羞辱、不恐嚇，但不讓逃避過關</li>
+              <li>擅長把抽象概念拆成可完成的任務</li>
+            </ul>
+          </article>
+          <article class="character-card">
+            <p class="role">紀錄者</p>
+            <h3>複習室系統</h3>
+            <p>
+              一套冷靜到近乎無情的題目系統。它記錄答題、錯因、提示次數與補救任務，從不評價人，只判斷答案。
+            </p>
+            <ul>
+              <li>答對會推進短劇情</li>
+              <li>答錯會開啟提示與補救題</li>
+              <li>每一小節都能獨立開始</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="world" class="section split-section">
+        <div>
+          <p class="kicker">Setting</p>
+          <h2>故事背景</h2>
+          <p>
+            契約複習室位於一棟安靜商辦的頂樓。每個夜晚，<span data-user-name>沈以寧</span>會在這裡完成一個小節的訓練：先讀一段任務情境，再用題目把概念釘牢。
+          </p>
+          <p>
+            這不是連續劇式的長篇故事，而是一組可以任意切入的短篇訓練紀錄。你可以從 B1 的數線開始，也可以直接跳到 B4 的排列組合；每一頁都會自然交代當下情境。
+          </p>
+          <p>
+            故事中的管教、限制與 DDLG 元素只作為成年人之間的角色設定與關係倫理討論，不描寫性行為或性暗示。DDLG 在本作品中指的是成年角色之間經明確同意的照顧、規則與依賴感，不等於真實親子關係，也不涉及未成年人。
+          </p>
+        </div>
+        <aside id="contract" class="contract-box contract-document">
+          <p class="contract-label">Private Review Agreement</p>
+          <h3>契約複習室學習契約</h3>
+          <p>
+            本契約只適用於兩名成年人之間的私人學習敘事。紅負責建立規則、指定任務並維持秩序；學習者同意在明確界線內服從指令，接受訂正、補救、短暫拘束或體罰等角色規則。所有安排都以專注、責任與學習進步為目的，不用來羞辱人格、製造恐懼或造成傷害。
+          </p>
+          <ol>
+            <li>事前同意：每次訓練開始前，雙方先確認今日範圍、角色位置、可接受的限制、補救方式與停止信號。沒有被說清楚並接受的內容，不會被視為同意。</li>
+            <li>積極同意：同意必須是清楚、主動、持續的回應；沉默、僵住、勉強配合或沒有反對，都不算同意。學習者可以在任何時候重新確認、暫停或撤回。</li>
+            <li>服從原則：訓練期間，學習者同意服從紅的讀題、限時、重做、訂正與補救指令。紅的權限只存在於約定範圍內，並且必須服務於學習目的。</li>
+            <li>拘束界線：拘束只用於故事中的專注與限制情境，例如固定手腕、限制離席或暫停書寫。拘束必須短暫、可解除、可拒絕；一旦出現不適、猶豫或停止信號，立即解除。</li>
+            <li>體罰界線：體罰只作為事前同意的管教項目，可以包含打手心等低風險、短時間的設定；不得造成傷害，不以疼痛取代教學，也不得在拒絕、沉默或狀態不明時執行。</li>
+            <li>錯題處理：答錯只代表方法需要修正，不代表人格被否定。紅可以要求重算、口述觀念、整理錯因或完成補救題，但必須把重點放回數學概念。</li>
+            <li>停止權：任何一方都可以要求暫停、降級或取消訓練。撤回同意不需要解釋理由，也不會被視為失敗、逃避或違約。</li>
+          </ol>
+          <div class="signature-area" aria-label="使用者簽名">
+            <p>學習者簽名</p>
+            <strong data-user-name>沈以寧</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section principles-section" aria-labelledby="principles-title">
+        <div class="section-heading">
+          <p class="kicker">Consent First</p>
+          <h2 id="principles-title">兩個大前提</h2>
+          <p>這個網站把 BDSM / DDLG 放在成年人、非露骨、重視界線的敘事框架裡。數學訓練可以有壓力與規則，但關係必須有尊重與停止權。</p>
+        </div>
+        <div class="principle-grid">
+          <article>
+            <h3>事前同意</h3>
+            <p>在任何訓練開始前，雙方先確認今天的範圍、規則、限制、補救方式與安全詞。沒有事先談清楚的內容，不會在劇情裡突然發生。</p>
+          </article>
+          <article>
+            <h3>積極同意</h3>
+            <p>同意不是一次簽完就永遠有效，而是在每個階段都能重新確認。角色可以說「繼續」、也可以說「暫停」，撤回同意不需要解釋理由。</p>
+          </article>
+          <article>
+            <h3>清楚界線</h3>
+            <p>BDSM 指的是成年人之間以同意、界線與安全為核心的權力交換或規則遊戲；DDLG 在這裡只保留照顧、依賴與規範感，不涉及未成年人或真實親子關係。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="chapters" class="section">
+        <div class="section-heading">
+          <p class="kicker">Course Map</p>
+          <h2>章節目錄</h2>
+          <p>目前先建立首頁連結架構；尚未實作的小節會先進入準備中頁面。</p>
+        </div>
+
+        <div class="book-list">
+          <section class="book-block" id="b1">
+            <div class="book-heading"><span>B1</span><h3>第一冊</h3></div>
+            <div class="chapter-list">
+              <article>
+                <h4>第1章 坐標系與函數圖形</h4>
+                <a href="lessons/b1-1-1.html">1-1 數線與絕對值</a>
+                <a href="lessons/b1-1-2.html">1-2 平面坐標系與線型函數</a>
+                <a href="lessons/b1-1-3.html">1-3 二次函數</a>
+                <a href="lessons/b1-1-4.html">1-4 一元二次不等式</a>
+              </article>
+              <article>
+                <h4>第2章 直線方程式</h4>
+                <a href="lessons/b1-2-1.html">2-1 斜率</a>
+                <a href="lessons/b1-2-2.html">2-2 直線方程式</a>
+                <a href="lessons/b1-2-3.html">2-3 直線的一般式與點到直線的距離</a>
+              </article>
+              <article>
+                <h4>第3章 式的運算</h4>
+                <a href="lessons/b1-3-1.html">3-1 多項式的基本概念與四則運算</a>
+                <a href="lessons/b1-3-2.html">3-2 除法原理與餘式定理</a>
+                <a href="lessons/b1-3-3.html">3-3 因式分解與分式</a>
+              </article>
+            </div>
+          </section>
+
+          <section class="book-block" id="b2">
+            <div class="book-heading"><span>B2</span><h3>第二冊</h3></div>
+            <div class="chapter-list">
+              <article>
+                <h4>第1章 三角函數</h4>
+                <a href="lessons/b2-1-1.html">1-1 角度的基本性質</a>
+                <a href="lessons/b2-1-2.html">1-2 銳角三角函數</a>
+                <a href="lessons/b2-1-3.html">1-3 任意角的三角函數</a>
+                <a href="lessons/b2-1-4.html">1-4 正弦、餘弦函數的圖形</a>
+              </article>
+              <article>
+                <h4>第2章 三角函數的應用</h4>
+                <a href="lessons/b2-2-1.html">2-1 正弦定理與餘弦定理</a>
+                <a href="lessons/b2-2-2.html">2-2 三角測量</a>
+              </article>
+              <article>
+                <h4>第3章 向量</h4>
+                <a href="lessons/b2-3-1.html">3-1 向量的作圖</a>
+                <a href="lessons/b2-3-2.html">3-2 向量的坐標表示法</a>
+                <a href="lessons/b2-3-3.html">3-3 向量的內積</a>
+              </article>
+              <article>
+                <h4>第4章 圓與直線</h4>
+                <a href="lessons/b2-4-1.html">4-1 圓方程式</a>
+                <a href="lessons/b2-4-2.html">4-2 圓與直線的關係</a>
+              </article>
+            </div>
+          </section>
+
+          <section class="book-block" id="b3">
+            <div class="book-heading"><span>B3</span><h3>第三冊</h3></div>
+            <div class="chapter-list">
+              <article>
+                <h4>第1章 數列與級數</h4>
+                <a href="lessons/b3-1-1.html">1-1 等差數列與等差級數</a>
+                <a href="lessons/b3-1-2.html">1-2 等比數列與等比級數</a>
+              </article>
+              <article>
+                <h4>第2章 方程式</h4>
+                <a href="lessons/b3-2-1.html">2-1 一元一次方程式與一元一次不等式</a>
+                <a href="lessons/b3-2-2.html">2-2 一元二次方程式</a>
+              </article>
+              <article>
+                <h4>第3章 二元一次不等式及其應用</h4>
+                <a href="lessons/b3-3-1.html">3-1 二元一次聯立方程組</a>
+                <a href="lessons/b3-3-2.html">3-2 二元一次不等式</a>
+                <a href="lessons/b3-3-3.html">3-3 線性規劃</a>
+              </article>
+              <article>
+                <h4>第4章 指數與對數</h4>
+                <a href="lessons/b3-4-1.html">4-1 指數</a>
+                <a href="lessons/b3-4-2.html">4-2 指數函數及其圖形</a>
+                <a href="lessons/b3-4-3.html">4-3 對數</a>
+                <a href="lessons/b3-4-4.html">4-4 對數函數及其圖形</a>
+              </article>
+            </div>
+          </section>
+
+          <section class="book-block" id="b4">
+            <div class="book-heading"><span>B4</span><h3>第四冊</h3></div>
+            <div class="chapter-list">
+              <article>
+                <h4>第1章 排列組合</h4>
+                <a href="lessons/b4-1-1.html">1-1 加法原理與乘法原理</a>
+                <a href="lessons/b4-1-2.html">1-2 直線排列</a>
+                <a href="lessons/b4-1-3.html">1-3 重複排列</a>
+                <a href="lessons/b4-1-4.html">1-4 組合</a>
+                <a href="lessons/b4-1-5.html">1-5 二項式定理</a>
+              </article>
+              <article>
+                <h4>第2章 機率</h4>
+                <a href="lessons/b4-2-1.html">2-1 樣本空間與事件</a>
+                <a href="lessons/b4-2-2.html">2-2 機率的運算</a>
+                <a href="lessons/b4-2-3.html">2-3 數學期望值</a>
+              </article>
+              <article>
+                <h4>第3章 統計</h4>
+                <a href="lessons/b4-3-1.html">3-1 統計的基本概念</a>
+                <a href="lessons/b4-3-2.html">3-2 統計資料整理</a>
+                <a href="lessons/b4-3-3.html">3-3 統計量分析</a>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>契約複習室是技職數學B的靜態複習網站原型。下一步會逐頁製作小節教學與互動題目。</p>
+    </footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
